@@ -23,7 +23,7 @@ It lets you add, complete, and delete tasks with a simple user interface.
 <h2>Screenshots</h2>
 
 Main screen  
-![Main Page](screenshots/home.png)
+![Main Page](./screenshots/home.png)
 
 Add Task Page  
 ![Add Task](screenshots/add-task.png)
