@@ -109,6 +109,5 @@ def completed():
         "completed_tasks.html", all_tasks=all_tasks, form=form, empty=len(all_tasks)
     )
 
-
 if __name__ == "__main__":
     app.run(debug=False)

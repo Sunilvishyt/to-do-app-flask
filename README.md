@@ -19,7 +19,6 @@ It lets you add, complete, and delete tasks with a simple user interface.
 
 ## 📸 Screenshots
 
-```html
 <h2>Screenshots</h2>
 
 Main screen  
@@ -32,21 +31,20 @@ Completed Tasks
 ![Completed Tasks](screenshots/completed-tasks.png)
 
 Remove Completed Tasks  
-![Completed Tasks](screenshots/remove-tasks.png)
+![Remove completed Tasks](screenshots/remove-tasks.png)
 
 
-🛠️ Setup Instructions
+## 🛠️ Setup Instructions
 📦 Requirements
-Python 3.8+
-
+Python 3.8+                
 pip package manager
 
 🧱 Install dependencies
-
-pip install -r requirements.txt
+```html
+pip install -r requirements.txt 
 Create a virtual environment first (recommended):
 python -m venv .venv
-source .venv/bin/activate  # Linux/Mac
+source .venv/bin/activate  # Linux/Mac 
 .venv\Scripts\activate     # Windows
 
 
@@ -60,8 +58,9 @@ DATABASE_URI=sqlite:///mydatabase.db
 🚦 Run the App
 python main.py
 Then open your browser at http://localhost:5000
-
-🗃️ Project Structure
+```
+## 🗃️ Project Structure
+```html
 📁 to-do-app/
 │
 ├── templates/
@@ -75,8 +74,8 @@ Then open your browser at http://localhost:5000
 ├── main.py
 ├── requirements.txt
 └── .env
-
-📄 License
+```
+📄 License <br>
 This project is licensed under the MIT License.
 Feel free to use, modify, or contribute to it!
 
@@ -84,4 +83,4 @@ Feel free to use, modify, or contribute to it!
 Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
 
 💬 Contact
-Built with 💻 by [Sunil Vishwakarma].
+Built with 💻 by Sunil Vishwakarma.
