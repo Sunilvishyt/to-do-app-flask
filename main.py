@@ -75,7 +75,6 @@ def home():
                 db.session.delete(task)
             db.session.commit()
         return redirect(url_for("home"))
-    print(all_tasks)
     return render_template(
         "index.html", all_tasks=all_tasks, form=form, empty=len(all_tasks)
     )
