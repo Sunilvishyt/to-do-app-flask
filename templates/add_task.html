@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tasks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Flask To-Do list</h1>
+    </header>
+
+    <main>
+      <h2>Add Task</h2>
+      <form action="/add-task" method="post">
+        {{form.hidden_tag()}}
+        <div class="add-task">
+          <div class="new-task">
+            {{form.task_title()}} {{form.task_description()}}
+          </div>
+          {{form.submit(class="submit-btn")}}
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <b>copyright @Sunil_vishwakarma.pmdc</b>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tasks</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/styles.css" />
+    <style>
+      h3 {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Flask To-Do list</h1>
+    </header>
+
+    <main>
+      <a href="{{url_for('home')}}">Go to Tasks Page</a>
+      <h2>Completed Tasks -</h2>
+      <form action="/completed-tasks" method="post">
+        {{form.hidden_tag()}}
+        <div class="task-list">
+          {%if empty==0%}
+          <h3>------------No Tasks to show----------------</h3>
+          {%else%} {%for tasks in all_tasks%}
+          <div class="task">
+            <!--                    grouping the tasks.id in the list name completed_tasks, so we can use them later.-->
+            <input
+              type="checkbox"
+              name="completed_tasks"
+              value="{{tasks.id}}"
+            />
+            <span class="task-title">{{tasks.task_title}} <br /></span>
+            <span class="task-desc">{{tasks.task_desc}} <br /><br /></span>
+          </div>
+          {%endfor%} {%endif%}
+          <button type="submit">Remove Selected</button>
+        </div>
+      </form>
+    </main>
+
+    <footer>
+      <b>copyright @Sunil_vishwakarma.pmdc</b>
+    </footer>
+  </body>
+</html>
