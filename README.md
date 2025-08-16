@@ -4,7 +4,12 @@ A clean and minimalistic **To-Do List App** built with **Flask**, **Flask-WTF**,
 It lets you add, complete, and delete tasks with a simple user interface.
 
 ---
+## 🚀 Live Demo
 
+Check out the live version of app hosted on PythonAnywhere:  
+👉 [Flask To-Do App](https://hakku.pythonanywhere.com)
+
+---
 ## 🚀 Features
 
 - ➕ Add new tasks with title and optional description
